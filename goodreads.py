@@ -1,8 +1,3 @@
-###
-# AGREGAR ADD BOOK TO SHELF
-# AGREGAR BUSQUEDA DE BOOK_ID POR NOMBRE
-###
-
 import requests
 from bs4 import BeautifulSoup
 import click
@@ -12,8 +7,8 @@ def __main__():
   token = get_token(soup)
   n = get_n(soup)
   login(token, url_sign, n, s)
-  get_book_id()
-  add_book(s)
+  book_id = get_book_id()
+  add_book(s, token, book_id)
 
 def get_html():
   s = requests.Session()
@@ -76,12 +71,22 @@ def get_book_id():
           break
       elif digit == '_':
           break
-  print(search)
-  print('https://www.goodreads.com/book/show/'+book_id)
 
-def add_book(s):
-  # CREATE FUNC TO ADD BOOK TO WANT_TO_READ
-  return
+  print('See the book at: https://www.goodreads.com/book/show/'+book_id)
+  return book_id
+
+def add_book(s,token, book_id):
+  headers = {
+      'X-CSRF-Token': token,
+      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+  }
+
+  data = {
+    'book_id': book_id,
+    'name': 'to-read',
+    'v': '2'
+  }
+  response = s.post('https://www.goodreads.com/shelf/add_to_shelf.json', headers=headers, data=data)
 
 if __name__ == "__main__":
   __main__()
