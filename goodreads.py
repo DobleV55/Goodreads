@@ -89,7 +89,7 @@ def add_book(s,token, book_id):
     'name': 'to-read',
     'v': '2'
   }
-  response = s.post('https://www.goodreads.com/shelf/add_to_shelf.json', headers=headers, data=data)
+  add_book = s.post('https://www.goodreads.com/shelf/add_to_shelf.json', headers=headers, data=data)
 
 if __name__ == "__main__":
   __main__()
