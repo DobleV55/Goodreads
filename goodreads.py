@@ -11,6 +11,7 @@ def __main__():
   add_book(s, token, book_id)
 
 def get_html():
+  ### GET SOURCE CODE
   s = requests.Session()
   url_sign = 'https://www.goodreads.com/user/sign_in'
   sign_in = s.get(url_sign)
@@ -18,6 +19,7 @@ def get_html():
   return soup, url_sign, s
 
 def get_token(soup):
+  ### GET TOKEN TO LOGIN
   metas_tags = soup.find_all("meta")
   count = 0
   for meta in metas_tags:
@@ -30,7 +32,7 @@ def get_token(soup):
   
   
 def get_n(soup):
-  ###GET 'N' PARAMETER TO LOGIN
+  ### GET 'N' PARAMETER TO LOGIN
   inputs = soup.find_all("input")
   inp = str(inputs[6])
   up_n = inp[37:]
@@ -76,6 +78,7 @@ def get_book_id():
   return book_id
 
 def add_book(s,token, book_id):
+  ### ADD BOOK TO YOUR 'WANT_TO_READ' SHELF
   headers = {
       'X-CSRF-Token': token,
       'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
