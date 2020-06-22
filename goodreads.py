@@ -3,7 +3,6 @@ from PyInquirer import style_from_dict, Token, prompt, Separator
 from pprint import pprint
 
 from bs4 import BeautifulSoup
-
 import click
 import requests
 
