@@ -12,7 +12,7 @@ def __main__():
   token = get_token(soup)
   n = get_n(soup)
   login(token, url_sign, n, s)
-  check_login(s)
+  get_book_id()
   add_book(s)
 
 def get_html():
@@ -56,21 +56,32 @@ def login(token, url_sign, n, s):
   }
   log_in = s.post(url_sign, data=data)
   
-def check_login(s):
-  ##CHECK_LOG_IN
-  url_check = 'https://www.goodreads.com/api/keys'
-  check = s.get(url_check)
-  print(check.text)
+def get_book_id():
+  search = click.prompt('enter book title')
+  search = search.replace(' ', '+')
+  url = 'https://www.goodreads.com/search?q='+search
+  req = requests.get(url)
+  soup = BeautifulSoup(req.content, 'html.parser')
+  match = (soup.find('a', class_='bookTitle'))
+  matcha = match.attrs['href']
+  book = str(matcha)
+  numbers = ['1','2','3','4','5','6','7','8','9','0']
+  book_id = ''
+  for digit in book:
+      if digit in numbers:
+          book_id+=digit
+      elif digit == '-':
+          break
+      elif digit == '.':
+          break
+      elif digit == '_':
+          break
+  print(search)
+  print('https://www.goodreads.com/book/show/'+book_id)
 
 def add_book(s):
-  add_book_url = 'https://www.goodreads.com/shelf/add_to_shelf.json'
-  data = {
-    'book_id': '13619',
-    'name': 'to-read',
-    'v': '2'
-  }
-  print(s.)
-  s.post(add_book_url, data=data)
+  # CREATE FUNC TO ADD BOOK TO WANT_TO_READ
+  return
 
 if __name__ == "__main__":
   __main__()
