@@ -12,7 +12,7 @@ Just write all your book titles line by line in a .txt file and run the script.
   - [Tests](#tests)
   - [Built With](#built-with)
   - [To-Do](#to-do)
-  - [What I learn](#what-i-learn)
+  - [What I learn](#what-i-learned)
   - [Contributing](#contributing)
   - [Authors](#authors)
   - [License](#license)
