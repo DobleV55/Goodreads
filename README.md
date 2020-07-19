@@ -64,7 +64,7 @@ Explain what these tests test and why.
 
   - [Python 3.8.3](https://www.python.org/downloads/release/python-383/) - Python is a programming language that lets you work quickly
 and integrate systems more effectively.
-  - [Cookiecutter](https://cookiecutter.readthedocs.io/) - Cookiecutter creates projects from project templates, e.g. Python package projects.
+  - [Cookiecutter](https://pypi.org/project/cookiecutter/) - Cookiecutter creates projects from project templates, e.g. Python package projects.
   - [Beautifulsoup4](https://pypi.org/project/beautifulsoup4/) - Beautiful Soup is a library that makes it easy to scrape information from web pages.
   - [Click](https://pypi.org/project/click/) - Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary.
   - [Requests](https://pypi.org/project/requests/) - Requests allows you to send HTTP/1.1 requests extremely easily.
@@ -99,7 +99,7 @@ Whit this Python project I learn a lot about:
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
+Please read [CONTRIBUTING.rst](CONTRIBUTING.rst) for details on our code
 of conduct, and the process for submitting pull requests to us.
 
 ## Authors
@@ -111,7 +111,7 @@ See also the list of [contributors](https://github.com/DobleV55/Goodreads/graphs
 
 ## License
 
-This project is licensed under [MITM](https://github.com/DobleV55/Goodreads/blob/master/LICENSE) - see the [LICENSE.md](LICENSE.md) file for
+This project is licensed under [MIT](https://www.mit.edu/) - see the [LICENSE](LICENSE) file for
 details
 
 ## Acknowledgments
