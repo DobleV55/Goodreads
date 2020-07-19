@@ -72,19 +72,19 @@ and integrate systems more effectively.
   
 ## To-Do
 
-- [] When finish option 1 or 2, ask again to add a book.
-- [] Add login option. (If user not loged-in, disable add-book options)
-- [] Add exit option.
-- [] Conserve session when input credentials. (moving the requests.Session to __name__)
-- [] Check what happens if the book is already on the Want to Read shelf.
-- [] Posibility to create a new shelf.
-- [] Posibility to add books to a different shelf.
-- [] When option 2 is selected, ask for normal or forced option.
-  - [] Normal - shows the link to the book and asks if its correct.
-  - [] Forced - add directly the book that finds on goodreads.
-- [] Add tests.
-- [] Explain those tests in this file.
-- [] Python Classes implementation, add comments and review code for changes.  
+- [ ] When finish option 1 or 2, ask again to add a book.
+- [ ] Add login option. (If user not loged-in, disable add-book options)
+- [ ] Add exit option.
+- [ ] Conserve session when input credentials. (moving the requests.Session to __name__)
+- [ ] Check what happens if the book is already on the Want to Read shelf.
+- [ ] Posibility to create a new shelf.
+- [ ] Posibility to add books to a different shelf.
+- [ ] When option 2 is selected, ask for normal or forced option.
+  - [ ] Normal - shows the link to the book and asks if its correct.
+  - [ ] Forced - add directly the book that finds on goodreads.
+- [ ] Add tests.
+- [ ] Explain those tests in this file.
+- [ ] Python Classes implementation, add comments and review code for changes.  
   
 ## What I Learned
 
