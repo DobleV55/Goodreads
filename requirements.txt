@@ -4,6 +4,7 @@ chardet==3.0.4
 click==7.1.2
 idna==2.9
 prompt-toolkit==1.0.14
+pytest==5.4.3
 Pygments==2.6.1
 PyInquirer==1.0.3
 regex==2020.6.8
