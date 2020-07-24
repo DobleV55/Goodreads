@@ -73,6 +73,8 @@ and integrate systems more effectively.
 ## To-Do
 
 - [ ] When finish option 1 or 2, ask again to add a book.
+- [ ] Check credentials to see if login was succesfull.
+- [ ] Add 'Book not found' on Option 1
 - [ ] Add login option. (If user not loged-in, disable add-book options)
 - [ ] Add exit option.
 - [ ] Conserve session when input credentials. (moving the requests.Session to __name__)

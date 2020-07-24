@@ -6,10 +6,10 @@ import pytest
 
 from click.testing import CliRunner
 
-from goodreads import goodreads
+from goodreads.goodreads import * 
 from goodreads import cli
-
-
+from click.testing import CliRunner
+import click
 @pytest.fixture
 def response():
     """Sample pytest fixture.
@@ -24,7 +24,6 @@ def test_content(response):
     """Sample pytest test function with the pytest fixture as an argument."""
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
-
 
 def test_command_line_interface():
     """Test the CLI."""
