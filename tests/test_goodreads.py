@@ -6,7 +6,7 @@ import pytest
 
 from click.testing import CliRunner
 
-from goodreads.goodreads import * 
+from goodreads import * 
 from goodreads import cli
 from click.testing import CliRunner
 import click
