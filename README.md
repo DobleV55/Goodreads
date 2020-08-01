@@ -35,7 +35,7 @@ your local machine for development, use and/or testing purposes.
     
     $ cd goodreads/
     
-    $ python goodreads.py
+    $ python main.py
 
 ### Running the Script
 
